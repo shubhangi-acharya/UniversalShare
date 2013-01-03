@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface USDetailViewController : UIViewController
+- (IBAction)btnPhoto_pressed:(id)sender;
+- (IBAction)btnShare_pressed:(id)sender;
+@property (retain, nonatomic) IBOutlet UITextView *txtContent;
 
 @property (strong, nonatomic) id detailItem;
 

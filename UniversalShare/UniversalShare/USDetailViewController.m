@@ -14,6 +14,7 @@
 
 @implementation USDetailViewController
 
+@synthesize txtContent = _txtContent;
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
 
@@ -21,6 +22,7 @@
 {
     [_detailItem release];
     [_detailDescriptionLabel release];
+    [_txtContent release];
     [super dealloc];
 }
 
@@ -63,6 +65,7 @@
 
 - (void)viewDidUnload
 {
+    [self setTxtContent:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -103,4 +106,9 @@
     return self;
 }
 							
+- (IBAction)btnPhoto_pressed:(id)sender {
+}
+
+- (IBAction)btnShare_pressed:(id)sender {
+}
 @end
