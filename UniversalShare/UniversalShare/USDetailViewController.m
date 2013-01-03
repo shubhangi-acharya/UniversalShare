@@ -23,6 +23,7 @@
     [_detailItem release];
     [_detailDescriptionLabel release];
     [_txtContent release];
+    [imgPhoto release];
     [super dealloc];
 }
 
@@ -41,11 +42,41 @@
 
 - (void)configureView
 {
+     
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [self.detailItem description];
     }
+}
+
+- (IBAction)btnPhoto_pressed:(id)sender 
+{
+    imagePicker = [[UIImagePickerController alloc]init];
+    imagePicker.SourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    imagePicker.delegate = self;   
+    [self presentModalViewController:imagePicker animated:YES];
+}
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)img editingInfo:(NSDictionary *)editInfo {
+//    if (imgPhoto.image == nil) {
+        imgPhoto.image = img;
+    [picker dismissModalViewControllerAnimated:YES];
+//        return;
+        
+//    }
+    
+//    if (imageView2.image == nil) {
+//        imageView2.image = img;
+//        [[picker parentViewController] dismissModalViewControllerAnimated:YES];
+//        return;
+//    }
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [picker dismissModalViewControllerAnimated:YES];
+
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,6 +97,8 @@
 - (void)viewDidUnload
 {
     [self setTxtContent:nil];
+    [imgPhoto release];
+    imgPhoto = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -106,9 +139,19 @@
     return self;
 }
 							
-- (IBAction)btnPhoto_pressed:(id)sender {
-}
+
 
 - (IBAction)btnShare_pressed:(id)sender {
 }
+
+
+- (void)textViewDidBeginEditing:(UITextView *)textView {
+    
+    if ([_txtContent.text isEqualToString: @"Content goes here..."]) {
+        [_txtContent setText:@""];
+    }
+    
+    NSLog(@"did begin editing");
+}
+
 @end

@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface USDetailViewController : UIViewController
+@interface USDetailViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+{
+
+    IBOutlet UIImageView *imgPhoto;
+    UIImagePickerController *imagePicker;
+}
+
 - (IBAction)btnPhoto_pressed:(id)sender;
 - (IBAction)btnShare_pressed:(id)sender;
 @property (retain, nonatomic) IBOutlet UITextView *txtContent;
