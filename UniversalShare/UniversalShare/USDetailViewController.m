@@ -17,6 +17,7 @@
 @synthesize txtContent = _txtContent;
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
+@synthesize vwOptions = _vwOptions;
 
 - (void)dealloc
 {
@@ -24,6 +25,7 @@
     [_detailDescriptionLabel release];
     [_txtContent release];
     [imgPhoto release];
+    [_vwOptions release];
     [super dealloc];
 }
 
@@ -49,6 +51,7 @@
         self.detailDescriptionLabel.text = [self.detailItem description];
     }
 }
+
 
 - (IBAction)btnPhoto_pressed:(id)sender 
 {
@@ -99,6 +102,7 @@
     [self setTxtContent:nil];
     [imgPhoto release];
     imgPhoto = nil;
+    [self setVwOptions:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -140,11 +144,6 @@
 }
 							
 
-
-- (IBAction)btnShare_pressed:(id)sender {
-}
-
-
 - (void)textViewDidBeginEditing:(UITextView *)textView {
     
     if ([_txtContent.text isEqualToString: @"Content goes here..."]) {
@@ -153,5 +152,106 @@
     
     NSLog(@"did begin editing");
 }
+
+
+- (IBAction)btnShare_pressed:(id)sender 
+{
+    
+ //Popover with checkbox
+    
+    _vwOptions.hidden = FALSE;
+    _vwOptions.userInteractionEnabled  =TRUE;
+    
+    
+}
+
+
+
+
+- (IBAction)btnFB:(id)sender 
+{
+    if(btnFB.selected == TRUE)
+    {
+        
+        btnFB.selected = FALSE;
+
+    }
+    else
+    {
+        btnFB.selected = TRUE;
+    }
+}
+
+- (IBAction)btnTwit:(id)sender 
+{
+    if(btnTw.selected == TRUE)
+    {
+        
+        btnTw.selected = FALSE;
+        
+    }
+    else
+    {
+        btnTw.selected = TRUE;
+    }
+}
+
+- (IBAction)btnLink:(id)sender 
+{
+    if(btnLk.selected == TRUE)
+    {
+        
+        btnLk.selected = FALSE;
+        
+    }
+    else
+    {
+        btnLk.selected = TRUE;
+    }
+}
+
+- (IBAction)btnEmail:(id)sender 
+{
+    if(btnEm.selected == TRUE)
+    {
+        
+        btnEm.selected = FALSE;
+        
+    }
+    else
+    {
+        btnEm.selected = TRUE;
+    }
+}
+
+- (IBAction)btnSms:(id)sender 
+{
+    if(btnSm.selected == TRUE)
+    {
+        
+        btnSm.selected = FALSE;
+        
+    }
+    else
+    {
+        btnSm.selected = TRUE;
+    }
+}
+
+- (IBAction)btnShareNow:(id)sender 
+{
+    _vwOptions.hidden = TRUE;
+    _vwOptions.userInteractionEnabled  =FALSE;
+    
+}
+
+
+
+
+
+
+
+
+
 
 @end

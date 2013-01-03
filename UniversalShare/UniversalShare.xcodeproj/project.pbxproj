@@ -17,6 +17,8 @@
 		F78A22DA1695632100C0685E /* USDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F78A22D91695632100C0685E /* USDetailViewController.m */; };
 		F78A22DD1695632100C0685E /* USMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F78A22DB1695632100C0685E /* USMasterViewController.xib */; };
 		F78A22E01695632100C0685E /* USDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F78A22DE1695632100C0685E /* USDetailViewController.xib */; };
+		F78A22EB16958CD900C0685E /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = F78A22E916958CD900C0685E /* check.png */; };
+		F78A22EC16958CD900C0685E /* uncheck.png in Resources */ = {isa = PBXBuildFile; fileRef = F78A22EA16958CD900C0685E /* uncheck.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		F78A22D91695632100C0685E /* USDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USDetailViewController.m; sourceTree = "<group>"; };
 		F78A22DC1695632100C0685E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/USMasterViewController.xib; sourceTree = "<group>"; };
 		F78A22DF1695632100C0685E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/USDetailViewController.xib; sourceTree = "<group>"; };
+		F78A22E916958CD900C0685E /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		F78A22EA16958CD900C0685E /* uncheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uncheck.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 		F78A22CA1695632100C0685E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F78A22E916958CD900C0685E /* check.png */,
+				F78A22EA16958CD900C0685E /* uncheck.png */,
 				F78A22CB1695632100C0685E /* UniversalShare-Info.plist */,
 				F78A22CC1695632100C0685E /* InfoPlist.strings */,
 				F78A22CF1695632100C0685E /* main.m */,
@@ -160,6 +166,8 @@
 				F78A22CE1695632100C0685E /* InfoPlist.strings in Resources */,
 				F78A22DD1695632100C0685E /* USMasterViewController.xib in Resources */,
 				F78A22E01695632100C0685E /* USDetailViewController.xib in Resources */,
+				F78A22EB16958CD900C0685E /* check.png in Resources */,
+				F78A22EC16958CD900C0685E /* uncheck.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
