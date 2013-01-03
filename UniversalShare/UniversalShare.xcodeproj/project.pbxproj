@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F78A22C41695632000C0685E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78A22C31695632000C0685E /* UIKit.framework */; };
+		F78A22C61695632000C0685E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78A22C51695632000C0685E /* Foundation.framework */; };
+		F78A22C81695632000C0685E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F78A22C71695632000C0685E /* CoreGraphics.framework */; };
+		F78A22CE1695632100C0685E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F78A22CC1695632100C0685E /* InfoPlist.strings */; };
+		F78A22D01695632100C0685E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F78A22CF1695632100C0685E /* main.m */; };
+		F78A22D41695632100C0685E /* USAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F78A22D31695632100C0685E /* USAppDelegate.m */; };
+		F78A22D71695632100C0685E /* USMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F78A22D61695632100C0685E /* USMasterViewController.m */; };
+		F78A22DA1695632100C0685E /* USDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F78A22D91695632100C0685E /* USDetailViewController.m */; };
+		F78A22DD1695632100C0685E /* USMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F78A22DB1695632100C0685E /* USMasterViewController.xib */; };
+		F78A22E01695632100C0685E /* USDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F78A22DE1695632100C0685E /* USDetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F78A22BF1695632000C0685E /* UniversalShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversalShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F78A22C31695632000C0685E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F78A22C51695632000C0685E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F78A22C71695632000C0685E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F78A22CB1695632100C0685E /* UniversalShare-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UniversalShare-Info.plist"; sourceTree = "<group>"; };
+		F78A22CD1695632100C0685E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F78A22CF1695632100C0685E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F78A22D11695632100C0685E /* UniversalShare-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UniversalShare-Prefix.pch"; sourceTree = "<group>"; };
+		F78A22D21695632100C0685E /* USAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USAppDelegate.h; sourceTree = "<group>"; };
+		F78A22D31695632100C0685E /* USAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USAppDelegate.m; sourceTree = "<group>"; };
+		F78A22D51695632100C0685E /* USMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USMasterViewController.h; sourceTree = "<group>"; };
+		F78A22D61695632100C0685E /* USMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USMasterViewController.m; sourceTree = "<group>"; };
+		F78A22D81695632100C0685E /* USDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USDetailViewController.h; sourceTree = "<group>"; };
+		F78A22D91695632100C0685E /* USDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USDetailViewController.m; sourceTree = "<group>"; };
+		F78A22DC1695632100C0685E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/USMasterViewController.xib; sourceTree = "<group>"; };
+		F78A22DF1695632100C0685E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/USDetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F78A22BC1695632000C0685E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F78A22C41695632000C0685E /* UIKit.framework in Frameworks */,
+				F78A22C61695632000C0685E /* Foundation.framework in Frameworks */,
+				F78A22C81695632000C0685E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F78A22B41695632000C0685E = {
+			isa = PBXGroup;
+			children = (
+				F78A22C91695632000C0685E /* UniversalShare */,
+				F78A22C21695632000C0685E /* Frameworks */,
+				F78A22C01695632000C0685E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F78A22C01695632000C0685E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F78A22BF1695632000C0685E /* UniversalShare.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F78A22C21695632000C0685E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F78A22C31695632000C0685E /* UIKit.framework */,
+				F78A22C51695632000C0685E /* Foundation.framework */,
+				F78A22C71695632000C0685E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F78A22C91695632000C0685E /* UniversalShare */ = {
+			isa = PBXGroup;
+			children = (
+				F78A22D21695632100C0685E /* USAppDelegate.h */,
+				F78A22D31695632100C0685E /* USAppDelegate.m */,
+				F78A22D51695632100C0685E /* USMasterViewController.h */,
+				F78A22D61695632100C0685E /* USMasterViewController.m */,
+				F78A22D81695632100C0685E /* USDetailViewController.h */,
+				F78A22D91695632100C0685E /* USDetailViewController.m */,
+				F78A22DB1695632100C0685E /* USMasterViewController.xib */,
+				F78A22DE1695632100C0685E /* USDetailViewController.xib */,
+				F78A22CA1695632100C0685E /* Supporting Files */,
+			);
+			path = UniversalShare;
+			sourceTree = "<group>";
+		};
+		F78A22CA1695632100C0685E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F78A22CB1695632100C0685E /* UniversalShare-Info.plist */,
+				F78A22CC1695632100C0685E /* InfoPlist.strings */,
+				F78A22CF1695632100C0685E /* main.m */,
+				F78A22D11695632100C0685E /* UniversalShare-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F78A22BE1695632000C0685E /* UniversalShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F78A22E31695632100C0685E /* Build configuration list for PBXNativeTarget "UniversalShare" */;
+			buildPhases = (
+				F78A22BB1695632000C0685E /* Sources */,
+				F78A22BC1695632000C0685E /* Frameworks */,
+				F78A22BD1695632000C0685E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UniversalShare;
+			productName = UniversalShare;
+			productReference = F78A22BF1695632000C0685E /* UniversalShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F78A22B61695632000C0685E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "SNS Technologies";
+			};
+			buildConfigurationList = F78A22B91695632000C0685E /* Build configuration list for PBXProject "UniversalShare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F78A22B41695632000C0685E;
+			productRefGroup = F78A22C01695632000C0685E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F78A22BE1695632000C0685E /* UniversalShare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F78A22BD1695632000C0685E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F78A22CE1695632100C0685E /* InfoPlist.strings in Resources */,
+				F78A22DD1695632100C0685E /* USMasterViewController.xib in Resources */,
+				F78A22E01695632100C0685E /* USDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F78A22BB1695632000C0685E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F78A22D01695632100C0685E /* main.m in Sources */,
+				F78A22D41695632100C0685E /* USAppDelegate.m in Sources */,
+				F78A22D71695632100C0685E /* USMasterViewController.m in Sources */,
+				F78A22DA1695632100C0685E /* USDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F78A22CC1695632100C0685E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F78A22CD1695632100C0685E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F78A22DB1695632100C0685E /* USMasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F78A22DC1695632100C0685E /* en */,
+			);
+			name = USMasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		F78A22DE1695632100C0685E /* USDetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F78A22DF1695632100C0685E /* en */,
+			);
+			name = USDetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F78A22E11695632100C0685E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F78A22E21695632100C0685E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F78A22E41695632100C0685E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UniversalShare/UniversalShare-Prefix.pch";
+				INFOPLIST_FILE = "UniversalShare/UniversalShare-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F78A22E51695632100C0685E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UniversalShare/UniversalShare-Prefix.pch";
+				INFOPLIST_FILE = "UniversalShare/UniversalShare-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F78A22B91695632000C0685E /* Build configuration list for PBXProject "UniversalShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F78A22E11695632100C0685E /* Debug */,
+				F78A22E21695632100C0685E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F78A22E31695632100C0685E /* Build configuration list for PBXNativeTarget "UniversalShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F78A22E41695632100C0685E /* Debug */,
+				F78A22E51695632100C0685E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F78A22B61695632000C0685E /* Project object */;
+}
